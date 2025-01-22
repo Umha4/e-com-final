@@ -19,3 +19,5 @@ export default function StudioPage() {
     </div>
   );
 }
+
+// src\app\studio\[[...tool]]\page.tsx
