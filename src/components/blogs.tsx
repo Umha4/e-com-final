@@ -4,7 +4,7 @@ import { client } from "@/sanity/lib/client";
 import React, { useEffect, useState } from "react";
 import { FaCommentDots } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
-
+import Image from "next/image";
 interface Post {
   _id: string;
   title: string;
@@ -65,7 +65,9 @@ export default function BlogsPage() {
           >
             {/* Image */}
             <div className="overflow-hidden">
-              <img
+              <   Image
+              height={48}
+              width={48}
                 src={post.imageUrl}
                 alt={post.title}
                 className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"

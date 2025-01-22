@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useWishlist } from '@/context/WishlistContext';
 
 export default function WishlistPage() {
@@ -12,7 +12,9 @@ export default function WishlistPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {wishlist.map((product) => (
             <div key={product._id} className="border p-4 rounded-lg shadow-sm">
-              <img
+              <Image
+              height={48}
+              width={48}
                 src={product.productImage.asset.url}
                 alt={product.title}
                 className="w-full h-48 object-cover rounded-lg"
