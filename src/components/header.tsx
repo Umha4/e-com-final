@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import { useState } from "react";
 import {
   FiPhone,
@@ -17,6 +17,7 @@ import {
 } from "react-icons/fi";
 import { useShoppingCart } from "use-shopping-cart"; // For cart functionality
 import { useWishlist } from "@/context/WishlistContext"; // Import the custom wishlist hook
+import { Link } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
